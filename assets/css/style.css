@@ -1,0 +1,23 @@
+.tableButton{
+    width: 50%;
+    background-color: green;
+    color: white;
+    text-transform: uppercase; 
+    padding: 5%;
+}
+
+#gameboard{
+    margin: 5vh auto;
+    height: 80vh;
+    width: 80vw;
+}
+
+.gametile{
+    height: 250px;
+    width: 250px;
+    background-color: #44445a;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    border: 2px solid #55555a
+}

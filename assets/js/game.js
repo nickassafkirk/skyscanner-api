@@ -24,9 +24,14 @@ let count;
 
 function startTimer(){
    count = 60, timer = setInterval(function() {
+       count = count--;
+       document.getElementById("timer").firstChild.innerText = count;
        console.log(count--);
-       //end timer when timer reaches 1
-       if(count == 1) clearInterval(timer);
+       //end timer when timer reaches -1, This displays 0.
+       if(count === -1) {
+           clearInterval(timer);
+           document.getElementById("timer").firstChild.innerText = "Game Over";
+       }
     }, 1000);
 }
 
@@ -35,6 +40,10 @@ function startTimer(){
 let tiles = document.querySelectorAll(".gametile");
 let array = [];
 let i = 0;
+
+
+
+
 
 
 //creates an array of 12 random numbers

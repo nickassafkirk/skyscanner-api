@@ -34,10 +34,14 @@ h1{
 #timer div, #score div{
     margin: 10px auto 25px auto;
     height: 80px;
+    line-height: 80px;
     text-align: center;
     border: 3px solid #555;
     background-color: #f5f5f5;
     border-radius: 10px;
+    font-weight: 600;
+    font-size: 2em;
+    text-transform: capitalize;
 }
 
 .label{

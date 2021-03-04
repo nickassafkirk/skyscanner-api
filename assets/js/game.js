@@ -102,7 +102,10 @@ function displayTile(){
     }
     // this counts number of clicks
     clicks = [i];
+    document.getElementById("clicks").firstChild.innerHTML = clicks;
 }
+
+
 
 
 //icon variables

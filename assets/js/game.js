@@ -25,8 +25,8 @@ let count;
 function startTimer(){
    count = 60, timer = setInterval(function() {
        count = count--;
-       document.getElementById("timer").firstChild.innerText = count;
-       console.log(count--);
+       document.getElementById("timer").firstChild.innerText = count--;
+
        //end timer when timer reaches -1, This displays 0.
        if(count === -1) {
            clearInterval(timer);
@@ -40,9 +40,16 @@ function startTimer(){
 let tiles = document.querySelectorAll(".gametile");
 let array = [];
 let i = 0;
+let clicks;
 
 
-
+/*
+tiles.addEventListener("click", function(){
+        let clicks = 0;
+        clicks = clicks++;
+        console.log(clicks)
+});
+*/
 
 
 
@@ -88,13 +95,15 @@ function displayTile(){
         this.innerHTML = football;
     } else if(this.innerHTML < 11){
         this.innerHTML = camera;
-    } else if(this.innerHTML <= 12){
+    } else if(this.innerHTML < 13){
         this.innerHTML = `<i class="fas fa-kiwi-bird"></i>`;
     } else {
         console.log("Error: too many tiles");
     }
-    
+    // this counts number of clicks
+    clicks = [i];
 }
+
 
 //icon variables
 let football = `<i class="fas fa-football-ball"></i>`;

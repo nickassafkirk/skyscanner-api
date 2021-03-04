@@ -90,11 +90,11 @@ function displayTile(){
     } else if (this.innerHTML < 5){
         this.innerHTML = `<i class="fas fa-bacterium"></i>`;
     } else if (this.innerHTML < 7){
-        this.innerHTML = mountain;
+        this.innerHTML = `<i class="fas fa-cocktail"></i>`;
     } else if (this.innerHTML < 9){
         this.innerHTML = football;
     } else if(this.innerHTML < 11){
-        this.innerHTML = camera;
+        this.innerHTML = poop;
     } else if(this.innerHTML < 13){
         this.innerHTML = `<i class="fas fa-kiwi-bird"></i>`;
     } else {
@@ -111,9 +111,9 @@ function displayTile(){
 //icon variables
 let football = `<i class="fas fa-football-ball"></i>`;
 let mask = `<i class="fas fa-ufo"></i>`;
-let camera = `<i class="fas fa-camera-retro"></i>`;
+let poop = `<i class="fas fa-poop"></i>`;
 let lightning = `<i class="far fa-bolt"></i>`;
-let mountain = `<i class="fas fa-mountain"></i>`;
+let bulb = `<i class="fal fa-lightbulb"></i>`;
 let rocket =`<i class="fas fa-rocket"></i>`;
 
 //create random RGB Color
